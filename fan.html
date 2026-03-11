@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            height: 300px;
+            width: 300px;
+            border: 10px solid black;
+            border-radius:50% ;
+            position: absolute;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 10%;
+            left: 35%;
+            animation-name:spin;
+            animation-duration: 0.1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: linear;
+            
+
+        }
+        .child1{
+            height: 20px;
+            width: 20px;
+            border: 3px solid black;
+            border-radius: 50%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            
+
+        }
+    
+        .hand{
+            height: 30vh;
+            width: 20px;
+            border: 10px solid black;
+            position: absolute;
+            left: 44%;
+            top: 53%;
+            /* background-color: brown; */
+        }
+        .bar{
+            height: 50px;
+            width: 150px;
+            border:10px solid  black;
+            position: absolute;
+            top: 85%;
+            left: 40%;
+            border-radius:10% ;
+            /* background-color: brown; */
+        }
+        .on{
+            height: 20px;
+            width: 30px;
+            border: 1px solid black;
+            position: absolute;
+            top: 25%;
+            left: 20%;
+            background-color: green;
+            
+        }
+        .off{
+            height:20px;
+            width: 30px;
+            border: 1px solid black;
+            position: absolute;
+            top: 25%;
+            left:60% ;
+            background-color: red;
+        }
+        .child2{
+            height: 145px;
+            width: 20px;
+            border: 3px solid black;
+            position: absolute;
+            bottom: 53%;
+            right: 45%;
+            /* border-bottom-left-radius: 50%; */
+            /* border-top-right-radius: 50%; */
+            border-radius: 30%;
+            background-color: gray;
+            /* transform: rotate(0deg); */
+        }
+       
+
+        .child3{
+            height: 20px;
+            width: 136px;
+            border: 3px solid black;
+            border-radius: 30%;
+            position: absolute;
+            /* display: flex; */
+            /* flex-direction: column;  */
+            left: 0;
+            background-color: gray;
+            /* transform: (90deg); */
+            
+ 
+
+
+        }
+        .child4{
+            height: 20px;
+            width: 145px;
+            border: 3px solid black;
+            border-radius: 30%;
+            position: absolute;
+            left: 53%;
+            background-color: gray;
+            transform: rotate(180deg)
+
+        }
+        .child5{
+            height: 145px;
+            width: 20px;
+            border: 3px solid black;
+            border-radius: 30%;
+            position: absolute;
+            top:53% ;
+            background-color: gray;
+            transform: rotate(360deg);
+            
+        }
+         @keyframes spin{
+            from{
+               transform:rotate(0deg);
+            }
+            to{
+                transform: rotate(360deg);
+            }
+
+
+        } 
+         
+        
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="child1"> 
+       
+    </div>
+     <div class="child2"></div>
+        <div class="child3"></div>
+        <div class="child4"></div>
+        <div class="child5"></div>
+       
+        
+    </div>
+    <div class="hand"></div>
+    <div class="bar">
+        <a href="fan.html">  <div class="on">ON</div></a>
+       <a href="off.html"> <div class="off">OFF</div> </a>
+    </div>
+</body>
+</html>
